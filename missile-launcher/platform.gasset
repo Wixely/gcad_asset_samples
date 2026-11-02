@@ -1,0 +1,367 @@
+asset 1
+project .
+source deck parts/deck.gcad body=main
+tessellate deck tolerance=3
+uv deck projection=unwrap resolution=1024 padding=8
+surface deck base_colour=1,1,1,1 metallic=0.15 roughness=0.7 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node deck source=deck
+node chassis
+source rack parts/canister.gcad body=main
+tessellate rack tolerance=3
+uv rack projection=unwrap resolution=1024 padding=8
+surface rack base_colour=1,1,1,1 metallic=0.2 roughness=0.65 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node rack
+node payload
+map rack base_colour textures/canister-shared-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-canister
+map deck base_colour textures/deck-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-deck
+source cheeks cheeks.gasm
+tessellate cheeks tolerance=1
+uv cheeks projection=unwrap resolution=1024 padding=8
+surface cheeks base_colour=1,1,1,1 metallic=0.2 roughness=0.7 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node cheeks source=cheeks
+node detail
+map cheeks base_colour textures/cheek-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-supports
+
+node rack/tube1 source=rack parent=rack translation=-330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node rack/tube2 source=rack parent=rack translation=0,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node rack/tube3 source=rack parent=rack translation=330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node rack/tube4 source=rack parent=rack translation=-330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node rack/tube5 source=rack parent=rack translation=0,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node rack/tube6 source=rack parent=rack translation=330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+
+source paint_pedestal parts/painted/pedestal.gcad body=main
+tessellate paint_pedestal tolerance=1
+uv paint_pedestal projection=unwrap resolution=1024 padding=8
+surface paint_pedestal base_colour=1,1,1,1 metallic=0.25 roughness=0.65 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/pedestal source=paint_pedestal parent=chassis translation=0,0,310 rotation=0,0,0,1
+
+source paint_turntable parts/painted/turntable.gcad body=main
+tessellate paint_turntable tolerance=1
+uv paint_turntable projection=unwrap resolution=1024 padding=8
+surface paint_turntable base_colour=1,1,1,1 metallic=0.25 roughness=0.65 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/turntable source=paint_turntable parent=chassis translation=0,0,180 rotation=0,0,0,1
+
+source paint_saddle parts/painted/saddle.gcad body=main
+tessellate paint_saddle tolerance=1
+uv paint_saddle projection=unwrap resolution=1024 padding=8
+surface paint_saddle base_colour=1,1,1,1 metallic=0.25 roughness=0.65 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/saddle source=paint_saddle parent=chassis translation=0,80,670 rotation=0,0,0,1
+
+source paint_cabinet parts/painted/cabinet.gcad body=main
+tessellate paint_cabinet tolerance=1
+uv paint_cabinet projection=unwrap resolution=1024 padding=8
+surface paint_cabinet base_colour=1,1,1,1 metallic=0.25 roughness=0.65 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/cabinet source=paint_cabinet parent=chassis translation=600,-500,180 rotation=0,0,0,1
+
+source paint_feet parts/painted/feet.gcad body=main
+tessellate paint_feet tolerance=1
+uv paint_feet projection=unwrap resolution=1024 padding=8
+surface paint_feet base_colour=1,1,1,1 metallic=0.25 roughness=0.65 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/foot1 source=paint_feet parent=chassis translation=-930,-800,-170 rotation=0,0,0,1
+node chassis/foot2 source=paint_feet parent=chassis translation=-930,800,-170 rotation=0,0,0,1
+node chassis/foot3 source=paint_feet parent=chassis translation=930,-800,-170 rotation=0,0,0,1
+node chassis/foot4 source=paint_feet parent=chassis translation=930,800,-170 rotation=0,0,0,1
+
+source paint_arms parts/painted/arms.gcad body=main
+tessellate paint_arms tolerance=1
+uv paint_arms projection=unwrap resolution=1024 padding=8
+surface paint_arms base_colour=1,1,1,1 metallic=0.25 roughness=0.65 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/arm1 source=paint_arms parent=chassis translation=-720,-570,10 rotation=0,0,0.342020143325669,0.939692620785908
+node chassis/arm2 source=paint_arms parent=chassis translation=-720,570,10 rotation=0,0,-0.342020143325669,0.939692620785908
+node chassis/arm3 source=paint_arms parent=chassis translation=720,-570,10 rotation=0,0,-0.342020143325669,0.939692620785908
+node chassis/arm4 source=paint_arms parent=chassis translation=720,570,10 rotation=0,0,0.342020143325669,0.939692620785908
+
+source paint_jacks parts/painted/jacks.gcad body=main
+tessellate paint_jacks tolerance=1
+uv paint_jacks projection=unwrap resolution=1024 padding=8
+surface paint_jacks base_colour=1,1,1,1 metallic=0.9 roughness=0.32 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/jack1 source=paint_jacks parent=chassis translation=-930,-800,-100 rotation=0,0,0,1
+node chassis/jack2 source=paint_jacks parent=chassis translation=-930,800,-100 rotation=0,0,0,1
+node chassis/jack3 source=paint_jacks parent=chassis translation=930,-800,-100 rotation=0,0,0,1
+node chassis/jack4 source=paint_jacks parent=chassis translation=930,800,-100 rotation=0,0,0,1
+
+source paint_pivots parts/painted/pivots.gcad body=main
+tessellate paint_pivots tolerance=1
+uv paint_pivots projection=unwrap resolution=1024 padding=8
+surface paint_pivots base_colour=1,1,1,1 metallic=0.9 roughness=0.32 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/pivot1 source=paint_pivots parent=chassis translation=700,80,1190 rotation=0,0.707106781186547,0,0.707106781186548
+node chassis/pivot-1 source=paint_pivots parent=chassis translation=-700,80,1190 rotation=0,0.707106781186547,0,0.707106781186548
+map paint_pedestal base_colour textures/pedestal-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-pedestal
+map paint_turntable base_colour textures/turntable-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-turntable
+map paint_saddle base_colour textures/saddle-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-saddle
+map paint_cabinet base_colour textures/cabinet-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-cabinet
+map paint_feet base_colour textures/feet-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-feet
+map paint_arms base_colour textures/arms-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-arms
+map paint_jacks base_colour textures/jacks-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-jacks
+map paint_pivots base_colour textures/pivots-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-pivots
+
+source paint_clamps parts/painted/clamps.gcad body=main
+tessellate paint_clamps tolerance=1
+uv paint_clamps projection=unwrap resolution=1024 padding=8
+surface paint_clamps base_colour=1,1,1,1 metallic=0.4 roughness=0.6 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/clamp1280 source=paint_clamps parent=detail translation=0,-510.073967406912,1540.9513750281 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/clamp360 source=paint_clamps parent=detail translation=0,323.729196666806,1152.14257422665 rotation=0.537299608346824,0,0,0.843391445812886
+
+source paint_ribs parts/painted/ribs.gcad body=main
+tessellate paint_ribs tolerance=1
+uv paint_ribs projection=unwrap resolution=1024 padding=8
+surface paint_ribs base_colour=1,1,1,1 metallic=0.4 roughness=0.6 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/rib0 source=paint_ribs parent=detail translation=338,0,350 rotation=0,0,0,1
+node detail/rib1 source=paint_ribs parent=detail translation=312.27,129.35,350 rotation=0,0,0.195090322016128,0.98078528040323
+node detail/rib10 source=paint_ribs parent=detail translation=-239,-239,350 rotation=0,0,0.923879532511287,-0.38268343236509
+node detail/rib11 source=paint_ribs parent=detail translation=-129.35,-312.27,350 rotation=0,0,0.831469612302545,-0.555570233019602
+node detail/rib12 source=paint_ribs parent=detail translation=0,-338,350 rotation=0,0,0.707106781186548,-0.707106781186547
+node detail/rib13 source=paint_ribs parent=detail translation=129.35,-312.27,350 rotation=0,0,0.555570233019602,-0.831469612302545
+node detail/rib14 source=paint_ribs parent=detail translation=239,-239,350 rotation=0,0,0.38268343236509,-0.923879532511287
+node detail/rib15 source=paint_ribs parent=detail translation=312.27,-129.35,350 rotation=0,0,0.195090322016128,-0.98078528040323
+node detail/rib2 source=paint_ribs parent=detail translation=239,239,350 rotation=0,0,0.38268343236509,0.923879532511287
+node detail/rib3 source=paint_ribs parent=detail translation=129.35,312.27,350 rotation=0,0,0.555570233019602,0.831469612302545
+node detail/rib4 source=paint_ribs parent=detail translation=0,338,350 rotation=0,0,0.707106781186547,0.707106781186548
+node detail/rib5 source=paint_ribs parent=detail translation=-129.35,312.27,350 rotation=0,0,0.831469612302545,0.555570233019602
+node detail/rib6 source=paint_ribs parent=detail translation=-239,239,350 rotation=0,0,0.923879532511287,0.38268343236509
+node detail/rib7 source=paint_ribs parent=detail translation=-312.27,129.35,350 rotation=0,0,0.98078528040323,0.195090322016128
+node detail/rib8 source=paint_ribs parent=detail translation=-338,0,350 rotation=0,0,1,6.12303176911189E-17
+node detail/rib9 source=paint_ribs parent=detail translation=-312.27,-129.35,350 rotation=0,0,0.980785280403231,-0.195090322016128
+
+source paint_collars parts/painted/collars.gcad body=main
+tessellate paint_collars tolerance=1
+uv paint_collars projection=unwrap resolution=1024 padding=8
+surface paint_collars base_colour=1,1,1,1 metallic=0.9 roughness=0.32 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/jackcollar1 source=paint_collars parent=detail translation=-930,-800,95 rotation=0,0,0,1
+node detail/jackcollar2 source=paint_collars parent=detail translation=-930,800,95 rotation=0,0,0,1
+node detail/jackcollar3 source=paint_collars parent=detail translation=930,-800,95 rotation=0,0,0,1
+node detail/jackcollar4 source=paint_collars parent=detail translation=930,800,95 rotation=0,0,0,1
+
+source paint_hubs parts/painted/hubs.gcad body=main
+tessellate paint_hubs tolerance=1
+uv paint_hubs projection=unwrap resolution=1024 padding=8
+surface paint_hubs base_colour=1,1,1,1 metallic=0.9 roughness=0.32 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/hub1 source=paint_hubs parent=detail translation=735,80,1190 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/hub-1 source=paint_hubs parent=detail translation=-735,80,1190 rotation=0,0.707106781186547,0,0.707106781186548
+
+source paint_rearcaps parts/painted/rearcaps.gcad body=main
+tessellate paint_rearcaps tolerance=1
+uv paint_rearcaps projection=unwrap resolution=1024 padding=8
+surface paint_rearcaps base_colour=1,1,1,1 metallic=0.4 roughness=0.6 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/rearcap1 source=paint_rearcaps parent=detail translation=-330,614.101850667771,840.199114913212 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearcap2 source=paint_rearcaps parent=detail translation=0,614.101850667771,840.199114913212 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearcap3 source=paint_rearcaps parent=detail translation=330,614.101850667771,840.199114913212 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearcap4 source=paint_rearcaps parent=detail translation=-330,749.339694424795,1130.21760676494 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearcap5 source=paint_rearcaps parent=detail translation=0,749.339694424795,1130.21760676494 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearcap6 source=paint_rearcaps parent=detail translation=330,749.339694424795,1130.21760676494 rotation=0.537299608346824,0,0,0.843391445812886
+
+source paint_rearplates parts/painted/rearplates.gcad body=main
+tessellate paint_rearplates tolerance=1
+uv paint_rearplates projection=unwrap resolution=1024 padding=8
+surface paint_rearplates base_colour=1,1,1,1 metallic=0.9 roughness=0.32 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/rearinset1 source=paint_rearplates parent=detail translation=-330,621.352312964064,836.818168819286 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearinset2 source=paint_rearplates parent=detail translation=0,621.352312964064,836.818168819286 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearinset3 source=paint_rearplates parent=detail translation=330,621.352312964064,836.818168819286 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearinset4 source=paint_rearplates parent=detail translation=-330,756.590156721088,1126.83666067101 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearinset5 source=paint_rearplates parent=detail translation=0,756.590156721088,1126.83666067101 rotation=0.537299608346824,0,0,0.843391445812886
+node detail/rearinset6 source=paint_rearplates parent=detail translation=330,756.590156721088,1126.83666067101 rotation=0.537299608346824,0,0,0.843391445812886
+
+source paint_service-door parts/painted/service-door.gcad body=main
+tessellate paint_service-door tolerance=1
+uv paint_service-door projection=unwrap resolution=1024 padding=8
+surface paint_service-door base_colour=1,1,1,1 metallic=0.4 roughness=0.6 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/cabinetdoor source=paint_service-door parent=detail translation=600,-342,225 rotation=0,0,0,1
+
+source paint_fasteners parts/painted/fasteners.gcad body=main
+tessellate paint_fasteners tolerance=1
+uv paint_fasteners projection=unwrap resolution=1024 padding=8
+surface paint_fasteners base_colour=1,1,1,1 metallic=0.9 roughness=0.32 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/capbolt1_105_105 source=paint_fasteners parent=detail translation=-225,658.476768150544,935.36143255206 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt1_105_-105 source=paint_fasteners parent=detail translation=-225,569.726933184997,745.036797274363 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt1_-105_105 source=paint_fasteners parent=detail translation=-435,658.476768150544,935.36143255206 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt1_-105_-105 source=paint_fasteners parent=detail translation=-435,569.726933184997,745.036797274363 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt2_105_105 source=paint_fasteners parent=detail translation=105,658.476768150544,935.36143255206 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt2_105_-105 source=paint_fasteners parent=detail translation=105,569.726933184997,745.036797274363 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt2_-105_105 source=paint_fasteners parent=detail translation=-105,658.476768150544,935.36143255206 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt2_-105_-105 source=paint_fasteners parent=detail translation=-105,569.726933184997,745.036797274363 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt3_105_105 source=paint_fasteners parent=detail translation=435,658.476768150544,935.36143255206 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt3_105_-105 source=paint_fasteners parent=detail translation=435,569.726933184997,745.036797274363 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt3_-105_105 source=paint_fasteners parent=detail translation=225,658.476768150544,935.36143255206 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt3_-105_-105 source=paint_fasteners parent=detail translation=225,569.726933184997,745.036797274363 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt4_105_105 source=paint_fasteners parent=detail translation=-225,793.714611907568,1225.37992440379 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt4_105_-105 source=paint_fasteners parent=detail translation=-225,704.964776942021,1035.05528912609 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt4_-105_105 source=paint_fasteners parent=detail translation=-435,793.714611907568,1225.37992440379 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt4_-105_-105 source=paint_fasteners parent=detail translation=-435,704.964776942021,1035.05528912609 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt5_105_105 source=paint_fasteners parent=detail translation=105,793.714611907568,1225.37992440379 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt5_105_-105 source=paint_fasteners parent=detail translation=105,704.964776942021,1035.05528912609 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt5_-105_105 source=paint_fasteners parent=detail translation=-105,793.714611907568,1225.37992440379 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt5_-105_-105 source=paint_fasteners parent=detail translation=-105,704.964776942021,1035.05528912609 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt6_105_105 source=paint_fasteners parent=detail translation=435,793.714611907568,1225.37992440379 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt6_105_-105 source=paint_fasteners parent=detail translation=435,704.964776942021,1035.05528912609 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt6_-105_105 source=paint_fasteners parent=detail translation=225,793.714611907568,1225.37992440379 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/capbolt6_-105_-105 source=paint_fasteners parent=detail translation=225,704.964776942021,1035.05528912609 rotation=0.843391445812886,0,0,-0.537299608346824
+node detail/cheekbolt1_-125_1300 source=paint_fasteners parent=detail translation=703,-125,1300 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/cheekbolt-1_-125_1300 source=paint_fasteners parent=detail translation=-703,-125,1300 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/cheekbolt1_-125_820 source=paint_fasteners parent=detail translation=703,-125,820 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/cheekbolt-1_-125_820 source=paint_fasteners parent=detail translation=-703,-125,820 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/cheekbolt1_285_1300 source=paint_fasteners parent=detail translation=703,285,1300 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/cheekbolt-1_285_1300 source=paint_fasteners parent=detail translation=-703,285,1300 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/cheekbolt1_285_820 source=paint_fasteners parent=detail translation=703,285,820 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/cheekbolt-1_285_820 source=paint_fasteners parent=detail translation=-703,285,820 rotation=0,0.707106781186547,0,0.707106781186548
+node detail/footbolt1_150_125 source=paint_fasteners parent=detail translation=-780,-675,-100 rotation=0,0,0,1
+node detail/footbolt1_150_-125 source=paint_fasteners parent=detail translation=-780,-925,-100 rotation=0,0,0,1
+node detail/footbolt1_-150_125 source=paint_fasteners parent=detail translation=-1080,-675,-100 rotation=0,0,0,1
+node detail/footbolt1_-150_-125 source=paint_fasteners parent=detail translation=-1080,-925,-100 rotation=0,0,0,1
+node detail/footbolt2_150_125 source=paint_fasteners parent=detail translation=-780,925,-100 rotation=0,0,0,1
+node detail/footbolt2_150_-125 source=paint_fasteners parent=detail translation=-780,675,-100 rotation=0,0,0,1
+node detail/footbolt2_-150_125 source=paint_fasteners parent=detail translation=-1080,925,-100 rotation=0,0,0,1
+node detail/footbolt2_-150_-125 source=paint_fasteners parent=detail translation=-1080,675,-100 rotation=0,0,0,1
+node detail/footbolt3_150_125 source=paint_fasteners parent=detail translation=1080,-675,-100 rotation=0,0,0,1
+node detail/footbolt3_150_-125 source=paint_fasteners parent=detail translation=1080,-925,-100 rotation=0,0,0,1
+node detail/footbolt3_-150_125 source=paint_fasteners parent=detail translation=780,-675,-100 rotation=0,0,0,1
+node detail/footbolt3_-150_-125 source=paint_fasteners parent=detail translation=780,-925,-100 rotation=0,0,0,1
+node detail/footbolt4_150_125 source=paint_fasteners parent=detail translation=1080,925,-100 rotation=0,0,0,1
+node detail/footbolt4_150_-125 source=paint_fasteners parent=detail translation=1080,675,-100 rotation=0,0,0,1
+node detail/footbolt4_-150_125 source=paint_fasteners parent=detail translation=780,925,-100 rotation=0,0,0,1
+node detail/footbolt4_-150_-125 source=paint_fasteners parent=detail translation=780,675,-100 rotation=0,0,0,1
+node detail/ringbolt0 source=paint_fasteners parent=detail translation=440,0,310 rotation=0,0,0,1
+node detail/ringbolt1 source=paint_fasteners parent=detail translation=406.51,168.38,310 rotation=0,0,0,1
+node detail/ringbolt10 source=paint_fasteners parent=detail translation=-311.13,-311.13,310 rotation=0,0,0,1
+node detail/ringbolt11 source=paint_fasteners parent=detail translation=-168.38,-406.51,310 rotation=0,0,0,1
+node detail/ringbolt12 source=paint_fasteners parent=detail translation=0,-440,310 rotation=0,0,0,1
+node detail/ringbolt13 source=paint_fasteners parent=detail translation=168.38,-406.51,310 rotation=0,0,0,1
+node detail/ringbolt14 source=paint_fasteners parent=detail translation=311.13,-311.13,310 rotation=0,0,0,1
+node detail/ringbolt15 source=paint_fasteners parent=detail translation=406.51,-168.38,310 rotation=0,0,0,1
+node detail/ringbolt2 source=paint_fasteners parent=detail translation=311.13,311.13,310 rotation=0,0,0,1
+node detail/ringbolt3 source=paint_fasteners parent=detail translation=168.38,406.51,310 rotation=0,0,0,1
+node detail/ringbolt4 source=paint_fasteners parent=detail translation=0,440,310 rotation=0,0,0,1
+node detail/ringbolt5 source=paint_fasteners parent=detail translation=-168.38,406.51,310 rotation=0,0,0,1
+node detail/ringbolt6 source=paint_fasteners parent=detail translation=-311.13,311.13,310 rotation=0,0,0,1
+node detail/ringbolt7 source=paint_fasteners parent=detail translation=-406.51,168.38,310 rotation=0,0,0,1
+node detail/ringbolt8 source=paint_fasteners parent=detail translation=-440,0,310 rotation=0,0,0,1
+node detail/ringbolt9 source=paint_fasteners parent=detail translation=-406.51,-168.38,310 rotation=0,0,0,1
+
+map paint_clamps base_colour textures/clamps-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-clamps
+map paint_ribs base_colour textures/ribs-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-ribs
+map paint_collars base_colour textures/collars-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-collars
+map paint_hubs base_colour textures/hubs-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-hubs
+map paint_rearcaps base_colour textures/rearcaps-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-rearcaps
+map paint_rearplates base_colour textures/rearplates-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-rearplates
+map paint_service-door base_colour textures/service-door-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-service-door
+map paint_fasteners base_colour textures/fasteners-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-fasteners
+
+source finish_screenframe parts/painted/screenframe.gcad body=main
+tessellate finish_screenframe tolerance=1
+uv finish_screenframe projection=unwrap resolution=1024 padding=8
+surface finish_screenframe base_colour=1,1,1,1 metallic=0 roughness=0.5 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/screenframe source=finish_screenframe parent=detail translation=600,-667,315 rotation=0,0,0,1
+
+source finish_display parts/painted/display.gcad body=main
+tessellate finish_display tolerance=1
+uv finish_display projection=unwrap resolution=1024 padding=8
+surface finish_display base_colour=1,1,1,1 metallic=0 roughness=0.5 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/screenface source=finish_display parent=detail translation=600,-686,337 rotation=0,0,0,1
+
+source finish_lenses parts/painted/lenses.gcad body=main
+tessellate finish_lenses tolerance=1
+uv finish_lenses projection=unwrap resolution=1024 padding=8
+surface finish_lenses base_colour=1,1,1,1 metallic=0 roughness=0.5 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/indicator0 source=finish_lenses parent=detail translation=525,-690,320 rotation=0.707106781186547,0,0,0.707106781186548
+node detail/indicator1 source=finish_lenses parent=detail translation=600,-690,320 rotation=0.707106781186547,0,0,0.707106781186548
+node detail/indicator2 source=finish_lenses parent=detail translation=675,-690,320 rotation=0.707106781186547,0,0,0.707106781186548
+
+source finish_latch parts/painted/latch.gcad body=main
+tessellate finish_latch tolerance=1
+uv finish_latch projection=unwrap resolution=1024 padding=8
+surface finish_latch base_colour=1,1,1,1 metallic=0.9 roughness=0.32 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/cabinetlatch source=finish_latch parent=detail translation=680,-325,350 rotation=0,0,0,1
+
+source finish_vents parts/painted/vents.gcad body=main
+tessellate finish_vents tolerance=1
+uv finish_vents projection=unwrap resolution=1024 padding=8
+surface finish_vents base_colour=1,1,1,1 metallic=0 roughness=0.5 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node chassis/vent0 source=finish_vents parent=chassis translation=490,-655,220 rotation=0,0,0,1
+node chassis/vent1 source=finish_vents parent=chassis translation=530,-655,220 rotation=0,0,0,1
+node chassis/vent2 source=finish_vents parent=chassis translation=570,-655,220 rotation=0,0,0,1
+node chassis/vent3 source=finish_vents parent=chassis translation=610,-655,220 rotation=0,0,0,1
+node chassis/vent4 source=finish_vents parent=chassis translation=650,-655,220 rotation=0,0,0,1
+node chassis/vent5 source=finish_vents parent=chassis translation=690,-655,220 rotation=0,0,0,1
+
+source finish_louvres parts/painted/louvres.gcad body=main
+tessellate finish_louvres tolerance=1
+uv finish_louvres projection=unwrap resolution=1024 padding=8
+surface finish_louvres base_colour=1,1,1,1 metallic=0 roughness=0.5 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node detail/rearlouvre0 source=finish_louvres parent=detail translation=575,-328,260 rotation=0,0,0,1
+node detail/rearlouvre1 source=finish_louvres parent=detail translation=575,-328,284 rotation=0,0,0,1
+node detail/rearlouvre2 source=finish_louvres parent=detail translation=575,-328,308 rotation=0,0,0,1
+node detail/rearlouvre3 source=finish_louvres parent=detail translation=575,-328,332 rotation=0,0,0,1
+node detail/rearlouvre4 source=finish_louvres parent=detail translation=575,-328,356 rotation=0,0,0,1
+
+source finish_payload-main parts/missile.gcad body=main
+tessellate finish_payload-main tolerance=1
+normals finish_payload-main crease=60
+uv finish_payload-main projection=unwrap resolution=1024 padding=8
+surface finish_payload-main base_colour=1,1,1,1 metallic=0 roughness=0.55 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node payload/missile1.main source=finish_payload-main parent=payload translation=-330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile2.main source=finish_payload-main parent=payload translation=0,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile3.main source=finish_payload-main parent=payload translation=330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile4.main source=finish_payload-main parent=payload translation=-330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile5.main source=finish_payload-main parent=payload translation=0,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile6.main source=finish_payload-main parent=payload translation=330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+
+source finish_payload-nose parts/missile.gcad body=nose
+tessellate finish_payload-nose tolerance=1
+normals finish_payload-nose crease=60
+uv finish_payload-nose projection=unwrap resolution=1024 padding=8
+surface finish_payload-nose base_colour=1,1,1,1 metallic=0 roughness=0.55 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node payload/missile1.nose source=finish_payload-nose parent=payload translation=-330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile2.nose source=finish_payload-nose parent=payload translation=0,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile3.nose source=finish_payload-nose parent=payload translation=330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile4.nose source=finish_payload-nose parent=payload translation=-330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile5.nose source=finish_payload-nose parent=payload translation=0,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile6.nose source=finish_payload-nose parent=payload translation=330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+
+source finish_payload-marking parts/missile.gcad body=marking
+tessellate finish_payload-marking tolerance=1
+uv finish_payload-marking projection=unwrap resolution=1024 padding=8
+surface finish_payload-marking base_colour=1,1,1,1 metallic=0 roughness=0.55 wrap_u=clamp wrap_v=clamp normal_scale=1 normal_y=positive
+node payload/missile1.marking source=finish_payload-marking parent=payload translation=-330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile2.marking source=finish_payload-marking parent=payload translation=0,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile3.marking source=finish_payload-marking parent=payload translation=330,582.381078121488,854.990754074136 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile4.marking source=finish_payload-marking parent=payload translation=-330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile5.marking source=finish_payload-marking parent=payload translation=0,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+node payload/missile6.marking source=finish_payload-marking parent=payload translation=330,717.618921878512,1145.00924592586 rotation=0.5372996083468239,0,0,0.8433914458128857
+
+map finish_screenframe base_colour textures/screenframe-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-screenframe
+map finish_display base_colour textures/display-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-display
+map finish_lenses base_colour textures/lenses-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-lenses
+map finish_latch base_colour textures/latch-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-latch
+map finish_vents base_colour textures/vents-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-vents
+map finish_louvres base_colour textures/louvres-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-louvres
+map finish_payload-main base_colour textures/payload-main-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-payload-main
+map finish_payload-marking base_colour textures/payload-marking-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-payload-marking
+map finish_payload-nose base_colour textures/payload-nose-base-colour.png license=LicenseRef-Project-Generated origin=generated-image-uv-payload-nose
+
+map rack normal textures/rack-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map deck normal textures/deck-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map cheeks normal textures/cheeks-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_pedestal normal textures/pedestal-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_turntable normal textures/turntable-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_saddle normal textures/saddle-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_cabinet normal textures/cabinet-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_feet normal textures/feet-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_arms normal textures/arms-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_jacks normal textures/jacks-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_pivots normal textures/pivots-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_clamps normal textures/clamps-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_ribs normal textures/ribs-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_collars normal textures/collars-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_hubs normal textures/hubs-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_rearcaps normal textures/rearcaps-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_rearplates normal textures/rearplates-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_service-door normal textures/service-door-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map paint_fasteners normal textures/fasteners-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_screenframe normal textures/screenframe-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_display normal textures/display-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_lenses normal textures/lenses-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_latch normal textures/latch-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_vents normal textures/vents-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_louvres normal textures/louvres-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_payload-main normal textures/payload-main-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_payload-marking normal textures/payload-marking-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1
+map finish_payload-nose normal textures/payload-nose-normal.png license=LicenseRef-Project-Generated origin=procedural-surface-detail-v1

@@ -1,0 +1,6 @@
+part deck parts/deck.gcad
+part chassis chassis.gasm
+part rack rack.gasm
+part payload payload.gasm
+part cheeks cheeks.gasm
+part detail detail.gasm

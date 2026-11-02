@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Normal-map generator (Windows)",
+    "type": "cppvsdbg",
+    "request": "launch",
+    "program": "${workspaceFolder}/missile-launcher/tools/normal-maps/target/debug/launcher-normal-maps.exe",
+    "args": ["."],
+    "cwd": "${workspaceFolder}/missile-launcher",
+    "preLaunchTask": "Build normal-map generator"
+  }]
+}

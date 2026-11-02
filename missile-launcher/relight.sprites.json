@@ -1,0 +1,54 @@
+{
+    "width":  256,
+    "height":  256,
+    "columns":  4,
+    "padding":  2,
+    "orthographic":  true,
+    "zoom":  1.0,
+    "frames":  [
+                   {
+                       "model_angle":  0
+                   },
+                   {
+                       "model_angle":  45
+                   },
+                   {
+                       "model_angle":  90
+                   },
+                   {
+                       "model_angle":  135
+                   },
+                   {
+                       "model_angle":  180
+                   },
+                   {
+                       "model_angle":  225
+                   },
+                   {
+                       "model_angle":  270
+                   },
+                   {
+                       "model_angle":  315
+                   }
+               ],
+    "normal_sheet":  true,
+    "lighting":  {
+                     "key_colour":  [
+                                        255,
+                                        240,
+                                        220
+                                    ],
+                     "key_intensity":  0.9,
+                     "fill_colour":  [
+                                         210,
+                                         225,
+                                         255
+                                     ],
+                     "fill_intensity":  0.2,
+                     "ambient":  0.3,
+                     "exposure":  1,
+                     "shadows":  "soft",
+                     "shadow_samples":  32,
+                     "softness":  0.08
+                 }
+}

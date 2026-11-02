@@ -1,0 +1,18 @@
+circle 178
+shaft: extrude 1760
+color #a7ad96
+body nose
+plane XY offset=1760
+circle 178
+section
+plane XY offset=1970
+circle 4
+section
+tip: loft
+color #303b37
+body marking
+plane XY offset=1720
+circle 182
+circle 177
+extrude 28
+color #bfa545

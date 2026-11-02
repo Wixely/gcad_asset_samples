@@ -1,0 +1,18 @@
+part vent0 parts/box.gcad w=15 d=12 h=75 r=2
+move vent0 490,-655,220
+color vent0 #171d1c
+part vent1 parts/box.gcad w=15 d=12 h=75 r=2
+move vent1 530,-655,220
+color vent1 #171d1c
+part vent2 parts/box.gcad w=15 d=12 h=75 r=2
+move vent2 570,-655,220
+color vent2 #171d1c
+part vent3 parts/box.gcad w=15 d=12 h=75 r=2
+move vent3 610,-655,220
+color vent3 #171d1c
+part vent4 parts/box.gcad w=15 d=12 h=75 r=2
+move vent4 650,-655,220
+color vent4 #171d1c
+part vent5 parts/box.gcad w=15 d=12 h=75 r=2
+move vent5 690,-655,220
+color vent5 #171d1c

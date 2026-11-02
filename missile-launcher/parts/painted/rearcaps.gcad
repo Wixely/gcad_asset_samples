@@ -1,0 +1,4 @@
+let w=280 d=280 h=30 r=12
+rect w d r=r
+base: extrude h
+color #343e35

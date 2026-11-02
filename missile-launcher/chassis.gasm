@@ -1,0 +1,77 @@
+part turntable parts/cylinder.gcad d=1000 h=130
+move turntable 0,0,180
+color turntable #222b2a
+part pedestal parts/cylinder.gcad d=650 h=360
+move pedestal 0,0,310
+color pedestal #424b34
+part saddle parts/box.gcad w=1320 d=600 h=150 r=45
+move saddle 0,80,670
+part pivot-1 parts/cylinder.gcad d=290 h=65
+rotate pivot-1 90 axis=y
+move pivot-1 -700,80,1190
+color pivot-1 #555e55
+part pivot1 parts/cylinder.gcad d=290 h=65
+rotate pivot1 90 axis=y
+move pivot1 700,80,1190
+color pivot1 #555e55
+part foot1 parts/box.gcad w=450 d=400 h=70 r=50
+move foot1 -930,-800,-170
+color foot1 #252c2c
+part jack1 parts/cylinder.gcad d=120 h=260
+move jack1 -930,-800,-100
+color jack1 #707a70
+part arm1 parts/box.gcad w=700 d=170 h=120 r=15
+rotate arm1 40 axis=z
+move arm1 -720,-570,10
+color arm1 #60694b
+part foot2 parts/box.gcad w=450 d=400 h=70 r=50
+move foot2 -930,800,-170
+color foot2 #252c2c
+part jack2 parts/cylinder.gcad d=120 h=260
+move jack2 -930,800,-100
+color jack2 #707a70
+part arm2 parts/box.gcad w=700 d=170 h=120 r=15
+rotate arm2 -40 axis=z
+move arm2 -720,570,10
+color arm2 #60694b
+part foot3 parts/box.gcad w=450 d=400 h=70 r=50
+move foot3 930,-800,-170
+color foot3 #252c2c
+part jack3 parts/cylinder.gcad d=120 h=260
+move jack3 930,-800,-100
+color jack3 #707a70
+part arm3 parts/box.gcad w=700 d=170 h=120 r=15
+rotate arm3 -40 axis=z
+move arm3 720,-570,10
+color arm3 #60694b
+part foot4 parts/box.gcad w=450 d=400 h=70 r=50
+move foot4 930,800,-170
+color foot4 #252c2c
+part jack4 parts/cylinder.gcad d=120 h=260
+move jack4 930,800,-100
+color jack4 #707a70
+part arm4 parts/box.gcad w=700 d=170 h=120 r=15
+rotate arm4 40 axis=z
+move arm4 720,570,10
+color arm4 #60694b
+part cabinet parts/box.gcad w=400 d=300 h=380 r=25
+move cabinet 600,-500,180
+color cabinet #59644b
+part vent0 parts/box.gcad w=15 d=12 h=75 r=2
+move vent0 490,-655,220
+color vent0 #171d1c
+part vent1 parts/box.gcad w=15 d=12 h=75 r=2
+move vent1 530,-655,220
+color vent1 #171d1c
+part vent2 parts/box.gcad w=15 d=12 h=75 r=2
+move vent2 570,-655,220
+color vent2 #171d1c
+part vent3 parts/box.gcad w=15 d=12 h=75 r=2
+move vent3 610,-655,220
+color vent3 #171d1c
+part vent4 parts/box.gcad w=15 d=12 h=75 r=2
+move vent4 650,-655,220
+color vent4 #171d1c
+part vent5 parts/box.gcad w=15 d=12 h=75 r=2
+move vent5 690,-655,220
+color vent5 #171d1c

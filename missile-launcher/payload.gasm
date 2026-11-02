@@ -1,0 +1,24 @@
+part missile1 parts/missile.gcad
+move missile1 -330,-160,0
+rotate missile1 65 axis=x
+move missile1 0,650,1000
+part missile2 parts/missile.gcad
+move missile2 0,-160,0
+rotate missile2 65 axis=x
+move missile2 0,650,1000
+part missile3 parts/missile.gcad
+move missile3 330,-160,0
+rotate missile3 65 axis=x
+move missile3 0,650,1000
+part missile4 parts/missile.gcad
+move missile4 -330,160,0
+rotate missile4 65 axis=x
+move missile4 0,650,1000
+part missile5 parts/missile.gcad
+move missile5 0,160,0
+rotate missile5 65 axis=x
+move missile5 0,650,1000
+part missile6 parts/missile.gcad
+move missile6 330,160,0
+rotate missile6 65 axis=x
+move missile6 0,650,1000

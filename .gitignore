@@ -1,0 +1,6 @@
+**/target/
+**/output/
+*.log
+*.pdb
+.DS_Store
+Thumbs.db

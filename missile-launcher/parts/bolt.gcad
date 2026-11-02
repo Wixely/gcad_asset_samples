@@ -1,0 +1,6 @@
+circle 48
+extrude 8
+plane XY offset=8
+ngon 31 6
+extrude 20
+color #8c9388

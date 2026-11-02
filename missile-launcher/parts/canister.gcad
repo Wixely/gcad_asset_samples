@@ -1,0 +1,4 @@
+rect 280 280
+rect 234 234
+case: extrude 1700
+color #687455

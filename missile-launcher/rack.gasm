@@ -1,0 +1,24 @@
+part tube1 parts/canister.gcad
+move tube1 -330,-160,0
+rotate tube1 65 axis=x
+move tube1 0,650,1000
+part tube2 parts/canister.gcad
+move tube2 0,-160,0
+rotate tube2 65 axis=x
+move tube2 0,650,1000
+part tube3 parts/canister.gcad
+move tube3 330,-160,0
+rotate tube3 65 axis=x
+move tube3 0,650,1000
+part tube4 parts/canister.gcad
+move tube4 -330,160,0
+rotate tube4 65 axis=x
+move tube4 0,650,1000
+part tube5 parts/canister.gcad
+move tube5 0,160,0
+rotate tube5 65 axis=x
+move tube5 0,650,1000
+part tube6 parts/canister.gcad
+move tube6 330,160,0
+rotate tube6 65 axis=x
+move tube6 0,650,1000

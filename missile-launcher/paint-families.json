@@ -1,0 +1,50 @@
+[
+    {
+        "args":  "d=650 h=360",
+        "template":  "cylinder",
+        "pattern":  "^pedestal$",
+        "id":  "pedestal"
+    },
+    {
+        "args":  "d=1000 h=130",
+        "template":  "cylinder",
+        "pattern":  "^turntable$",
+        "id":  "turntable"
+    },
+    {
+        "args":  "w=1320 d=600 h=150 r=45",
+        "template":  "box",
+        "pattern":  "^saddle$",
+        "id":  "saddle"
+    },
+    {
+        "args":  "w=400 d=300 h=380 r=25",
+        "template":  "box",
+        "pattern":  "^cabinet$",
+        "id":  "cabinet"
+    },
+    {
+        "args":  "w=450 d=400 h=70 r=50",
+        "template":  "box",
+        "pattern":  "^foot[1-4]$",
+        "id":  "feet"
+    },
+    {
+        "args":  "w=700 d=170 h=120 r=15",
+        "template":  "box",
+        "pattern":  "^arm[1-4]$",
+        "id":  "arms"
+    },
+    {
+        "args":  "d=120 h=260",
+        "template":  "cylinder",
+        "pattern":  "^jack[1-4]$",
+        "id":  "jacks"
+    },
+    {
+        "args":  "d=290 h=65",
+        "template":  "cylinder",
+        "pattern":  "^pivot-?1$",
+        "id":  "pivots"
+    }
+]

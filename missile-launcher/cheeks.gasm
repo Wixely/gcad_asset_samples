@@ -1,0 +1,4 @@
+part left parts/cheek.gcad
+move left -610,80,760
+part right parts/cheek.gcad
+move right 610,80,760

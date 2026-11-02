@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+    "label": "Build normal-map generator",
+    "type": "process",
+    "command": "cargo",
+    "args": ["build", "--locked", "--manifest-path", "missile-launcher/tools/normal-maps/Cargo.toml"],
+    "problemMatcher": "$rustc"
+  }]
+}

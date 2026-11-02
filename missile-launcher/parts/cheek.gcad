@@ -1,0 +1,4 @@
+rect 160 550 r=25
+armor: extrude 600
+chamfer 8 armor.end&armor.side
+color #525b3c

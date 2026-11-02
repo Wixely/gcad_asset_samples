@@ -1,0 +1,4 @@
+rect 1700 1500 r=160
+deck: extrude 180
+chamfer 22 deck.end&deck.side
+color #59624a

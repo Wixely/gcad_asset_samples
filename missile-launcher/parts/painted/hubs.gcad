@@ -1,0 +1,4 @@
+let d=160 h=40
+circle d
+base: extrude h
+color #414946

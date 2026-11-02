@@ -1,0 +1,36 @@
+part screenframe parts/box.gcad w=295 d=24 h=160 r=8
+move screenframe 600,-667,315
+color screenframe #101c1b
+part screenface parts/box.gcad w=250 d=12 h=115 r=4
+move screenface 600,-686,337
+color screenface #326e65
+part indicator0 parts/cylinder.gcad d=18 h=15
+rotate indicator0 90 axis=x
+move indicator0 525,-690,320
+color indicator0 #b6aa54
+part indicator1 parts/cylinder.gcad d=18 h=15
+rotate indicator1 90 axis=x
+move indicator1 600,-690,320
+color indicator1 #b6aa54
+part indicator2 parts/cylinder.gcad d=18 h=15
+rotate indicator2 90 axis=x
+move indicator2 675,-690,320
+color indicator2 #b6aa54
+part cabinetlatch parts/box.gcad w=70 d=25 h=22 r=6
+move cabinetlatch 680,-325,350
+color cabinetlatch #8d9480
+part rearlouvre0 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre0 575,-328,260
+color rearlouvre0 #161e19
+part rearlouvre1 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre1 575,-328,284
+color rearlouvre1 #161e19
+part rearlouvre2 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre2 575,-328,308
+color rearlouvre2 #161e19
+part rearlouvre3 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre3 575,-328,332
+color rearlouvre3 #161e19
+part rearlouvre4 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre4 575,-328,356
+color rearlouvre4 #161e19

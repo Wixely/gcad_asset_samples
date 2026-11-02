@@ -1,0 +1,399 @@
+part clamp360 parts/clamp.gcad
+move clamp360 0,0,360
+rotate clamp360 65 axis=x
+move clamp360 0,650,1000
+part clamp1280 parts/clamp.gcad
+move clamp1280 0,0,1280
+rotate clamp1280 65 axis=x
+move clamp1280 0,650,1000
+part ringbolt0 parts/bolt.gcad
+move ringbolt0 440,0,310
+part rib0 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib0 0 axis=z
+move rib0 338,0,350
+color rib0 #2c352c
+part ringbolt1 parts/bolt.gcad
+move ringbolt1 406.51,168.38,310
+part rib1 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib1 22.5 axis=z
+move rib1 312.27,129.35,350
+color rib1 #2c352c
+part ringbolt2 parts/bolt.gcad
+move ringbolt2 311.13,311.13,310
+part rib2 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib2 45 axis=z
+move rib2 239,239,350
+color rib2 #2c352c
+part ringbolt3 parts/bolt.gcad
+move ringbolt3 168.38,406.51,310
+part rib3 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib3 67.5 axis=z
+move rib3 129.35,312.27,350
+color rib3 #2c352c
+part ringbolt4 parts/bolt.gcad
+move ringbolt4 0,440,310
+part rib4 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib4 90 axis=z
+move rib4 0,338,350
+color rib4 #2c352c
+part ringbolt5 parts/bolt.gcad
+move ringbolt5 -168.38,406.51,310
+part rib5 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib5 112.5 axis=z
+move rib5 -129.35,312.27,350
+color rib5 #2c352c
+part ringbolt6 parts/bolt.gcad
+move ringbolt6 -311.13,311.13,310
+part rib6 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib6 135 axis=z
+move rib6 -239,239,350
+color rib6 #2c352c
+part ringbolt7 parts/bolt.gcad
+move ringbolt7 -406.51,168.38,310
+part rib7 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib7 157.5 axis=z
+move rib7 -312.27,129.35,350
+color rib7 #2c352c
+part ringbolt8 parts/bolt.gcad
+move ringbolt8 -440,0,310
+part rib8 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib8 180 axis=z
+move rib8 -338,0,350
+color rib8 #2c352c
+part ringbolt9 parts/bolt.gcad
+move ringbolt9 -406.51,-168.38,310
+part rib9 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib9 202.5 axis=z
+move rib9 -312.27,-129.35,350
+color rib9 #2c352c
+part ringbolt10 parts/bolt.gcad
+move ringbolt10 -311.13,-311.13,310
+part rib10 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib10 225 axis=z
+move rib10 -239,-239,350
+color rib10 #2c352c
+part ringbolt11 parts/bolt.gcad
+move ringbolt11 -168.38,-406.51,310
+part rib11 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib11 247.5 axis=z
+move rib11 -129.35,-312.27,350
+color rib11 #2c352c
+part ringbolt12 parts/bolt.gcad
+move ringbolt12 0,-440,310
+part rib12 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib12 270 axis=z
+move rib12 0,-338,350
+color rib12 #2c352c
+part ringbolt13 parts/bolt.gcad
+move ringbolt13 168.38,-406.51,310
+part rib13 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib13 292.5 axis=z
+move rib13 129.35,-312.27,350
+color rib13 #2c352c
+part ringbolt14 parts/bolt.gcad
+move ringbolt14 311.13,-311.13,310
+part rib14 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib14 315 axis=z
+move rib14 239,-239,350
+color rib14 #2c352c
+part ringbolt15 parts/bolt.gcad
+move ringbolt15 406.51,-168.38,310
+part rib15 parts/box.gcad w=48 d=30 h=270 r=5
+rotate rib15 337.5 axis=z
+move rib15 312.27,-129.35,350
+color rib15 #2c352c
+part jackcollar1 parts/cylinder.gcad d=190 h=60
+move jackcollar1 -930,-800,95
+color jackcollar1 #373f30
+part footbolt1_-150_-125 parts/bolt.gcad
+move footbolt1_-150_-125 -1080,-925,-100
+part footbolt1_-150_125 parts/bolt.gcad
+move footbolt1_-150_125 -1080,-675,-100
+part footbolt1_150_-125 parts/bolt.gcad
+move footbolt1_150_-125 -780,-925,-100
+part footbolt1_150_125 parts/bolt.gcad
+move footbolt1_150_125 -780,-675,-100
+part jackcollar2 parts/cylinder.gcad d=190 h=60
+move jackcollar2 -930,800,95
+color jackcollar2 #373f30
+part footbolt2_-150_-125 parts/bolt.gcad
+move footbolt2_-150_-125 -1080,675,-100
+part footbolt2_-150_125 parts/bolt.gcad
+move footbolt2_-150_125 -1080,925,-100
+part footbolt2_150_-125 parts/bolt.gcad
+move footbolt2_150_-125 -780,675,-100
+part footbolt2_150_125 parts/bolt.gcad
+move footbolt2_150_125 -780,925,-100
+part jackcollar3 parts/cylinder.gcad d=190 h=60
+move jackcollar3 930,-800,95
+color jackcollar3 #373f30
+part footbolt3_-150_-125 parts/bolt.gcad
+move footbolt3_-150_-125 780,-925,-100
+part footbolt3_-150_125 parts/bolt.gcad
+move footbolt3_-150_125 780,-675,-100
+part footbolt3_150_-125 parts/bolt.gcad
+move footbolt3_150_-125 1080,-925,-100
+part footbolt3_150_125 parts/bolt.gcad
+move footbolt3_150_125 1080,-675,-100
+part jackcollar4 parts/cylinder.gcad d=190 h=60
+move jackcollar4 930,800,95
+color jackcollar4 #373f30
+part footbolt4_-150_-125 parts/bolt.gcad
+move footbolt4_-150_-125 780,675,-100
+part footbolt4_-150_125 parts/bolt.gcad
+move footbolt4_-150_125 780,925,-100
+part footbolt4_150_-125 parts/bolt.gcad
+move footbolt4_150_-125 1080,675,-100
+part footbolt4_150_125 parts/bolt.gcad
+move footbolt4_150_125 1080,925,-100
+part cheekbolt-1_-125_820 parts/bolt.gcad
+rotate cheekbolt-1_-125_820 90 axis=y
+move cheekbolt-1_-125_820 -703,-125,820
+part cheekbolt-1_-125_1300 parts/bolt.gcad
+rotate cheekbolt-1_-125_1300 90 axis=y
+move cheekbolt-1_-125_1300 -703,-125,1300
+part cheekbolt-1_285_820 parts/bolt.gcad
+rotate cheekbolt-1_285_820 90 axis=y
+move cheekbolt-1_285_820 -703,285,820
+part cheekbolt-1_285_1300 parts/bolt.gcad
+rotate cheekbolt-1_285_1300 90 axis=y
+move cheekbolt-1_285_1300 -703,285,1300
+part hub-1 parts/cylinder.gcad d=160 h=40
+rotate hub-1 90 axis=y
+move hub-1 -735,80,1190
+color hub-1 #323b33
+part cheekbolt1_-125_820 parts/bolt.gcad
+rotate cheekbolt1_-125_820 90 axis=y
+move cheekbolt1_-125_820 703,-125,820
+part cheekbolt1_-125_1300 parts/bolt.gcad
+rotate cheekbolt1_-125_1300 90 axis=y
+move cheekbolt1_-125_1300 703,-125,1300
+part cheekbolt1_285_820 parts/bolt.gcad
+rotate cheekbolt1_285_820 90 axis=y
+move cheekbolt1_285_820 703,285,820
+part cheekbolt1_285_1300 parts/bolt.gcad
+rotate cheekbolt1_285_1300 90 axis=y
+move cheekbolt1_285_1300 703,285,1300
+part hub1 parts/cylinder.gcad d=160 h=40
+rotate hub1 90 axis=y
+move hub1 735,80,1190
+color hub1 #323b33
+part screenframe parts/box.gcad w=295 d=24 h=160 r=8
+move screenframe 600,-667,315
+color screenframe #101c1b
+part screenface parts/box.gcad w=250 d=12 h=115 r=4
+move screenface 600,-686,337
+color screenface #326e65
+part indicator0 parts/cylinder.gcad d=18 h=15
+rotate indicator0 90 axis=x
+move indicator0 525,-690,320
+color indicator0 #b6aa54
+part indicator1 parts/cylinder.gcad d=18 h=15
+rotate indicator1 90 axis=x
+move indicator1 600,-690,320
+color indicator1 #b6aa54
+part indicator2 parts/cylinder.gcad d=18 h=15
+rotate indicator2 90 axis=x
+move indicator2 675,-690,320
+color indicator2 #b6aa54
+part rearcap1 parts/box.gcad w=280 d=280 h=30 r=12
+move rearcap1 -330,-160,-35
+rotate rearcap1 65 axis=x
+move rearcap1 0,650,1000
+color rearcap1 #454e35
+part rearinset1 parts/box.gcad w=190 d=190 h=8 r=14
+move rearinset1 -330,-160,-43
+rotate rearinset1 65 axis=x
+move rearinset1 0,650,1000
+color rearinset1 #28312a
+part capbolt1_-105_-105 parts/bolt.gcad
+rotate capbolt1_-105_-105 180 axis=x
+move capbolt1_-105_-105 -435,-265,-35
+rotate capbolt1_-105_-105 65 axis=x
+move capbolt1_-105_-105 0,650,1000
+part capbolt1_-105_105 parts/bolt.gcad
+rotate capbolt1_-105_105 180 axis=x
+move capbolt1_-105_105 -435,-55,-35
+rotate capbolt1_-105_105 65 axis=x
+move capbolt1_-105_105 0,650,1000
+part capbolt1_105_-105 parts/bolt.gcad
+rotate capbolt1_105_-105 180 axis=x
+move capbolt1_105_-105 -225,-265,-35
+rotate capbolt1_105_-105 65 axis=x
+move capbolt1_105_-105 0,650,1000
+part capbolt1_105_105 parts/bolt.gcad
+rotate capbolt1_105_105 180 axis=x
+move capbolt1_105_105 -225,-55,-35
+rotate capbolt1_105_105 65 axis=x
+move capbolt1_105_105 0,650,1000
+part rearcap2 parts/box.gcad w=280 d=280 h=30 r=12
+move rearcap2 0,-160,-35
+rotate rearcap2 65 axis=x
+move rearcap2 0,650,1000
+color rearcap2 #454e35
+part rearinset2 parts/box.gcad w=190 d=190 h=8 r=14
+move rearinset2 0,-160,-43
+rotate rearinset2 65 axis=x
+move rearinset2 0,650,1000
+color rearinset2 #28312a
+part capbolt2_-105_-105 parts/bolt.gcad
+rotate capbolt2_-105_-105 180 axis=x
+move capbolt2_-105_-105 -105,-265,-35
+rotate capbolt2_-105_-105 65 axis=x
+move capbolt2_-105_-105 0,650,1000
+part capbolt2_-105_105 parts/bolt.gcad
+rotate capbolt2_-105_105 180 axis=x
+move capbolt2_-105_105 -105,-55,-35
+rotate capbolt2_-105_105 65 axis=x
+move capbolt2_-105_105 0,650,1000
+part capbolt2_105_-105 parts/bolt.gcad
+rotate capbolt2_105_-105 180 axis=x
+move capbolt2_105_-105 105,-265,-35
+rotate capbolt2_105_-105 65 axis=x
+move capbolt2_105_-105 0,650,1000
+part capbolt2_105_105 parts/bolt.gcad
+rotate capbolt2_105_105 180 axis=x
+move capbolt2_105_105 105,-55,-35
+rotate capbolt2_105_105 65 axis=x
+move capbolt2_105_105 0,650,1000
+part rearcap3 parts/box.gcad w=280 d=280 h=30 r=12
+move rearcap3 330,-160,-35
+rotate rearcap3 65 axis=x
+move rearcap3 0,650,1000
+color rearcap3 #454e35
+part rearinset3 parts/box.gcad w=190 d=190 h=8 r=14
+move rearinset3 330,-160,-43
+rotate rearinset3 65 axis=x
+move rearinset3 0,650,1000
+color rearinset3 #28312a
+part capbolt3_-105_-105 parts/bolt.gcad
+rotate capbolt3_-105_-105 180 axis=x
+move capbolt3_-105_-105 225,-265,-35
+rotate capbolt3_-105_-105 65 axis=x
+move capbolt3_-105_-105 0,650,1000
+part capbolt3_-105_105 parts/bolt.gcad
+rotate capbolt3_-105_105 180 axis=x
+move capbolt3_-105_105 225,-55,-35
+rotate capbolt3_-105_105 65 axis=x
+move capbolt3_-105_105 0,650,1000
+part capbolt3_105_-105 parts/bolt.gcad
+rotate capbolt3_105_-105 180 axis=x
+move capbolt3_105_-105 435,-265,-35
+rotate capbolt3_105_-105 65 axis=x
+move capbolt3_105_-105 0,650,1000
+part capbolt3_105_105 parts/bolt.gcad
+rotate capbolt3_105_105 180 axis=x
+move capbolt3_105_105 435,-55,-35
+rotate capbolt3_105_105 65 axis=x
+move capbolt3_105_105 0,650,1000
+part rearcap4 parts/box.gcad w=280 d=280 h=30 r=12
+move rearcap4 -330,160,-35
+rotate rearcap4 65 axis=x
+move rearcap4 0,650,1000
+color rearcap4 #454e35
+part rearinset4 parts/box.gcad w=190 d=190 h=8 r=14
+move rearinset4 -330,160,-43
+rotate rearinset4 65 axis=x
+move rearinset4 0,650,1000
+color rearinset4 #28312a
+part capbolt4_-105_-105 parts/bolt.gcad
+rotate capbolt4_-105_-105 180 axis=x
+move capbolt4_-105_-105 -435,55,-35
+rotate capbolt4_-105_-105 65 axis=x
+move capbolt4_-105_-105 0,650,1000
+part capbolt4_-105_105 parts/bolt.gcad
+rotate capbolt4_-105_105 180 axis=x
+move capbolt4_-105_105 -435,265,-35
+rotate capbolt4_-105_105 65 axis=x
+move capbolt4_-105_105 0,650,1000
+part capbolt4_105_-105 parts/bolt.gcad
+rotate capbolt4_105_-105 180 axis=x
+move capbolt4_105_-105 -225,55,-35
+rotate capbolt4_105_-105 65 axis=x
+move capbolt4_105_-105 0,650,1000
+part capbolt4_105_105 parts/bolt.gcad
+rotate capbolt4_105_105 180 axis=x
+move capbolt4_105_105 -225,265,-35
+rotate capbolt4_105_105 65 axis=x
+move capbolt4_105_105 0,650,1000
+part rearcap5 parts/box.gcad w=280 d=280 h=30 r=12
+move rearcap5 0,160,-35
+rotate rearcap5 65 axis=x
+move rearcap5 0,650,1000
+color rearcap5 #454e35
+part rearinset5 parts/box.gcad w=190 d=190 h=8 r=14
+move rearinset5 0,160,-43
+rotate rearinset5 65 axis=x
+move rearinset5 0,650,1000
+color rearinset5 #28312a
+part capbolt5_-105_-105 parts/bolt.gcad
+rotate capbolt5_-105_-105 180 axis=x
+move capbolt5_-105_-105 -105,55,-35
+rotate capbolt5_-105_-105 65 axis=x
+move capbolt5_-105_-105 0,650,1000
+part capbolt5_-105_105 parts/bolt.gcad
+rotate capbolt5_-105_105 180 axis=x
+move capbolt5_-105_105 -105,265,-35
+rotate capbolt5_-105_105 65 axis=x
+move capbolt5_-105_105 0,650,1000
+part capbolt5_105_-105 parts/bolt.gcad
+rotate capbolt5_105_-105 180 axis=x
+move capbolt5_105_-105 105,55,-35
+rotate capbolt5_105_-105 65 axis=x
+move capbolt5_105_-105 0,650,1000
+part capbolt5_105_105 parts/bolt.gcad
+rotate capbolt5_105_105 180 axis=x
+move capbolt5_105_105 105,265,-35
+rotate capbolt5_105_105 65 axis=x
+move capbolt5_105_105 0,650,1000
+part rearcap6 parts/box.gcad w=280 d=280 h=30 r=12
+move rearcap6 330,160,-35
+rotate rearcap6 65 axis=x
+move rearcap6 0,650,1000
+color rearcap6 #454e35
+part rearinset6 parts/box.gcad w=190 d=190 h=8 r=14
+move rearinset6 330,160,-43
+rotate rearinset6 65 axis=x
+move rearinset6 0,650,1000
+color rearinset6 #28312a
+part capbolt6_-105_-105 parts/bolt.gcad
+rotate capbolt6_-105_-105 180 axis=x
+move capbolt6_-105_-105 225,55,-35
+rotate capbolt6_-105_-105 65 axis=x
+move capbolt6_-105_-105 0,650,1000
+part capbolt6_-105_105 parts/bolt.gcad
+rotate capbolt6_-105_105 180 axis=x
+move capbolt6_-105_105 225,265,-35
+rotate capbolt6_-105_105 65 axis=x
+move capbolt6_-105_105 0,650,1000
+part capbolt6_105_-105 parts/bolt.gcad
+rotate capbolt6_105_-105 180 axis=x
+move capbolt6_105_-105 435,55,-35
+rotate capbolt6_105_-105 65 axis=x
+move capbolt6_105_-105 0,650,1000
+part capbolt6_105_105 parts/bolt.gcad
+rotate capbolt6_105_105 180 axis=x
+move capbolt6_105_105 435,265,-35
+rotate capbolt6_105_105 65 axis=x
+move capbolt6_105_105 0,650,1000
+part cabinetdoor parts/box.gcad w=320 d=15 h=285 r=5
+move cabinetdoor 600,-342,225
+color cabinetdoor #303a2c
+part cabinetlatch parts/box.gcad w=70 d=25 h=22 r=6
+move cabinetlatch 680,-325,350
+color cabinetlatch #8d9480
+part rearlouvre0 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre0 575,-328,260
+color rearlouvre0 #161e19
+part rearlouvre1 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre1 575,-328,284
+color rearlouvre1 #161e19
+part rearlouvre2 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre2 575,-328,308
+color rearlouvre2 #161e19
+part rearlouvre3 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre3 575,-328,332
+color rearlouvre3 #161e19
+part rearlouvre4 parts/box.gcad w=180 d=20 h=8 r=3
+move rearlouvre4 575,-328,356
+color rearlouvre4 #161e19

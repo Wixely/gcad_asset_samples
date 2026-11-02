@@ -1,0 +1,4 @@
+rect 1040 650 r=20
+rect 1000 610 r=8
+band: extrude 45
+color #252e29
