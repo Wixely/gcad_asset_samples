@@ -4,6 +4,12 @@ A fictional static game prop, authored as a CAD assembly and a separately
 prepared game asset. There are 29 meshes, 168 nodes and no skin or animation rig.
 Geometry uses millimetres and Z-up; game export converts to metres and Y-up.
 
+![Missile launcher three-quarter view](preview/angle-045.png)
+
+See the [full image gallery](../README.md#around-the-model) for eight model views,
+the [animated turntable](../README.md#animated-turntable), and
+[sprite and normal-map sheets](../README.md#sprite-sheets-and-relighting).
+
 ## Source files
 
 - `platform.gasset`: authoritative textured game asset with shared mesh instances.
@@ -13,7 +19,8 @@ Geometry uses millimetres and Z-up; game export converts to metres and Y-up.
 - `*-prompts.txt`: artwork generation records; `paint-families.json`: paint grouping.
 - `tools/normal-maps/`: deterministic Rust normal-map generator.
 - `relight.sprites.json`, `turntable.sprites.json`: sprite rendering recipes.
-- `preview/`: current diagnostic still and 512-square, 120-frame looping APNG.
+- `preview/`: diagnostic still, eight turntable views, lit/albedo/normal sprite
+  sheets and a 512-square, 120-frame looping APNG.
 
 28 shared colour maps and 28 shared normal maps cover all 29 materials. Contact
 hardware has bare-metal finishes; painted structures use olive colour atlases.
